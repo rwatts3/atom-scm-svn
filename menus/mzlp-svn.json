@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle mzlp-svn",
+        "command": "mzlp-svn:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "mzlp-svn",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "mzlp-svn:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
