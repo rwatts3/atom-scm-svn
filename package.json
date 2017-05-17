@@ -2,8 +2,8 @@
   "name": "mzlp-svn",
   "main": "./lib/mzlp-svn",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [
+  "description": "A package for Windows TortoiseSVN, for Mediazen LP Team",
+  "keywords": ["mzlp","mediazen","lpteam","juicyjusung"
   ],
   "activationCommands": {
     "atom-workspace": "mzlp-svn:toggle"
