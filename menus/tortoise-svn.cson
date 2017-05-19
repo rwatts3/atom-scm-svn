@@ -1,0 +1,150 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+"context-menu":
+  "atom-text-editor": [
+    {
+      "label": "mzlp-svn"
+      "submenu": [
+        {
+          "label": "Add"
+          "command": "tortoise-svn:addFromEditor"
+        }
+        {
+          "label": "Blame"
+          "command": "tortoise-svn:blameFromEditor"
+        }
+        {
+          "label": "Commit"
+          "command": "tortoise-svn:commitFromEditor"
+        }
+        {
+          "label": "Diff"
+          "command": "tortoise-svn:diffFromEditor"
+        }
+        {
+          "label": "Lock"
+          "command": "tortoise-svn:lockFromEditor"
+        }
+        {
+          "label": "Log"
+          "command": "tortoise-svn:logFromEditor"
+        }
+        {
+          "label": "Rename"
+          "command": "tortoise-svn:renameFromEditor"
+        }
+        {
+          "label": "Revert"
+          "command": "tortoise-svn:revertFromEditor"
+        }
+        {
+          "label": "Unlock"
+          "command": "tortoise-svn:unlockFromEditor"
+        }
+        {
+          "label": "Update"
+          "command": "tortoise-svn:updateFromEditor"
+        }
+      ]
+    }
+  ],
+  ".tree-view": [
+    {
+      "label": "mzlp-svn",
+      "submenu": [
+        {
+          "label": "Add"
+          "command": "tortoise-svn:addFromTreeView"
+        }
+        {
+          "label": "Blame"
+          "command": "tortoise-svn:blameFromTreeView"
+        }
+        {
+          "label": "Commit"
+          "command": "tortoise-svn:commitFromTreeView"
+        }
+        {
+          "label": "Diff"
+          "command": "tortoise-svn:diffFromTreeView"
+        }
+        {
+          "label": "Lock"
+          "command": "tortoise-svn:lockFromTreeView"
+        }
+        {
+          "label": "Log"
+          "command": "tortoise-svn:logFromTreeView"
+        }
+        {
+          "label": "Rename"
+          "command": "tortoise-svn:renameFromTreeView"
+        }
+        {
+          "label": "Revert"
+          "command": "tortoise-svn:revertFromTreeView"
+        }
+        {
+          "label": "Switch",
+          "command": "tortoise-svn:switchFromTreeView"
+        }
+        {
+          "label": "Unlock"
+          "command": "tortoise-svn:unlockFromTreeView"
+        }
+        {
+          "label": "Update"
+          "command": "tortoise-svn:updateFromTreeView"
+        }
+      ]
+    }
+  ]
+"menu": [
+  {
+    "label": "Packages"
+    "submenu": [
+      "label": "mzlp-svn"
+      "submenu": [
+        {
+          "label": "Add"
+          "command": "tortoise-svn:addFromEditor"
+        }
+        {
+          "label": "Blame"
+          "command": "tortoise-svn:blameFromEditor"
+        }
+        {
+          "label": "Commit"
+          "command": "tortoise-svn:commitFromEditor"
+        }
+        {
+          "label": "Diff"
+          "command": "tortoise-svn:diffFromEditor"
+        }
+        {
+          "label": "Lock"
+          "command": "tortoise-svn:lockFromEditor"
+        }
+        {
+          "label": "Log"
+          "command": "tortoise-svn:logFromEditor"
+        }
+        {
+          "label": "Rename"
+          "command": "tortoise-svn:renameFromEditor"
+        }
+        {
+          "label": "Revert"
+          "command": "tortoise-svn:revertFromEditor"
+        }
+        {
+          "label": "Unlock"
+          "command": "tortoise-svn:unlockFromEditor"
+        }
+        {
+          "label": "Update"
+          "command": "tortoise-svn:updateFromEditor"
+        }
+      ]
+    ]
+  }
+]

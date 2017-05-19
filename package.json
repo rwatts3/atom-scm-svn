@@ -1,13 +1,35 @@
 {
   "name": "mzlp-svn",
-  "main": "./lib/mzlp-svn",
+  "main": "./lib/tortoise-svn",
   "version": "0.0.0",
   "description": "A package for Windows TortoiseSVN, for Mediazen LP Team",
   "keywords": ["mzlp","mediazen","lpteam","juicyjusung"
   ],
   "activationCommands": {
-    "atom-workspace": "mzlp-svn:toggle"
-  },
+     "atom-workspace": [
+       "tortoise-svn:blameFromTreeView",
+       "tortoise-svn:blameFromEditor",
+       "tortoise-svn:commitFromTreeView",
+       "tortoise-svn:commitFromEditor",
+       "tortoise-svn:diffFromTreeView",
+       "tortoise-svn:diffFromEditor",
+       "tortoise-svn:logFromTreeView",
+       "tortoise-svn:logFromEditor",
+       "tortoise-svn:revertFromTreeView",
+       "tortoise-svn:revertFromEditor",
+       "tortoise-svn:updateFromTreeView",
+       "tortoise-svn:updateFromEditor",
+       "tortoise-svn:switchFromTreeView",
+       "tortoise-svn:addFromTreeView",
+       "tortoise-svn:addFromEditor",
+       "tortoise-svn:renameFromTreeView",
+       "tortoise-svn:renameFromEditor",
+       "tortoise-svn:lockFromTreeView",
+       "tortoise-svn:lockFromEditor",
+       "tortoise-svn:unlockFromTreeView",
+       "tortoise-svn:unlockFromEditor"
+     ]
+   },
   "repository": "https://github.com/atom/mzlp-svn",
   "license": "MIT",
   "engines": {
