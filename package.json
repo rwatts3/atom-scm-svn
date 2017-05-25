@@ -30,7 +30,7 @@
        "tortoise-svn:unlockFromEditor"
      ]
    },
-  "repository": "https://github.com/atom/mzlp-svn",
+  "repository": "https://github.com/jusung21c/mzlp-svn",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
