@@ -1,7 +1,7 @@
 {
   "name": "mzlp-svn",
   "main": "./lib/tortoise-svn",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A package for Windows TortoiseSVN, for Mediazen LP Team",
   "keywords": [
     "mzlp",
