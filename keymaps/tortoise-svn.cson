@@ -8,10 +8,10 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
 
-"atom-text-editor":
-  "alt-b": "tortoise-svn:blameFromEditor"
-  "alt-c": "tortoise-svn:commitFromEditor"
-  "alt-d": "tortoise-svn:diffFromEditor"
-  "alt-l": "tortoise-svn:logFromEditor"
-  "alt-r": "tortoise-svn:revertFromEditor"
-  "alt-u": "tortoise-svn:updateFromEditor"
+"atom-workspace":
+  "alt-b": "tortoise-svn:blameFromTreeView"
+  "alt-c": "tortoise-svn:commitFromTreeView"
+  "alt-d": "tortoise-svn:diffFromTreeView"
+  "alt-l": "tortoise-svn:logFromTreeView"
+  "alt-r": "tortoise-svn:revertFromTreeView"
+  "alt-u": "tortoise-svn:updateFromTreeView"

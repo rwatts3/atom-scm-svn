@@ -105,45 +105,10 @@
       "label": "mzlp-svn"
       "submenu": [
         {
-          "label": "Add"
-          "command": "tortoise-svn:addFromEditor"
+          "label": "좌측 트리뷰에서 사용해주세요"
+          
         }
-        {
-          "label": "Blame"
-          "command": "tortoise-svn:blameFromEditor"
-        }
-        {
-          "label": "Commit"
-          "command": "tortoise-svn:commitFromEditor"
-        }
-        {
-          "label": "Diff"
-          "command": "tortoise-svn:diffFromEditor"
-        }
-        {
-          "label": "Lock"
-          "command": "tortoise-svn:lockFromEditor"
-        }
-        {
-          "label": "Log"
-          "command": "tortoise-svn:logFromEditor"
-        }
-        {
-          "label": "Rename"
-          "command": "tortoise-svn:renameFromEditor"
-        }
-        {
-          "label": "Revert"
-          "command": "tortoise-svn:revertFromEditor"
-        }
-        {
-          "label": "Unlock"
-          "command": "tortoise-svn:unlockFromEditor"
-        }
-        {
-          "label": "Update"
-          "command": "tortoise-svn:updateFromEditor"
-        }
+
       ]
     ]
   }
