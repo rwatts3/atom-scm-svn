@@ -15,3 +15,4 @@
   "alt-l": "tortoise-svn:logFromTreeView"
   "alt-r": "tortoise-svn:revertFromTreeView"
   "alt-u": "tortoise-svn:updateFromTreeView"
+  "alt-o": "tortoise-svn:checkoutSVN"

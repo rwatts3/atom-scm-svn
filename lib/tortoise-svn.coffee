@@ -25,9 +25,15 @@ resolveTreeSelection = ->
     treeView = treeView.mainModule.treeView
     treeView.selectedPath
 
+resolveTreeHead = ->
+  if atom.packages.isPackageLoaded("tree-view")
+    treeView = atom.packages.getLoadedPackage("tree-view")
+    treeView = treeView.mainModule.treeView
+    treeView.list.querySelector('.header > span').getAttribute('data-path')
+
 resolveEditorFile = ->
   editor = atom.workspace.getActivePaneItem()
-  file = editor?.buffer.file
+  file = editor?.buffer.filef
   file?.path
 
 blame = (currFile)->
@@ -119,6 +125,18 @@ unlock = (currFile) ->
   else
     tortoiseSvn(["/command:unlock", "/path:."], currFile)
 
+checkout =(url,dir,userinfo) ->
+  svn = require('node-svn-ultimate')
+
+  svn.commands.checkout url, dir, userinfo, (err) ->
+    console.log 'err : ' + err
+    if err==null
+      alert 'Checkout complete'
+      atom.project.addPath(dir)
+    else
+      console.log err
+
+
 module.exports = TortoiseSvn =
   config:
     tortoisePath:
@@ -166,6 +184,7 @@ module.exports = TortoiseSvn =
     atom.commands.add "atom-workspace", "tortoise-svn:unlockFromTreeView": => @unlockFromTreeView()
     atom.commands.add "atom-workspace", "tortoise-svn:unlockFromEditor": => @unlockFromEditor()
 
+    atom.commands.add "atom-workspace", "tortoise-svn:checkoutSVN": => @checkoutSVN()
   blameFromTreeView: ->
     currFile = resolveTreeSelection()
     blame(currFile) if currFile?
@@ -249,3 +268,16 @@ module.exports = TortoiseSvn =
   unlockFromEditor: ->
     currFile = resolveEditorFile()
     unlock(currFile) if currFile?
+
+  checkoutSVN: ->
+    # url = 'https://DESKTOP-A4U3RU7/svn/ssss'
+    # dir = 'c:/test'
+    # userinfo =
+    #   'username': 'jusung4'
+    #   'password': '1234'
+    url = 'https://lp-hp:8443/svn/LP2.6_Premium5/64/LP%20Tools/01.%20Table%20Builder'
+    dir = 'c:/test'
+    userinfo =
+      'username': 'klgterry'
+      'password': 'ritmql12!'
+    checkout(url,dir,userinfo)

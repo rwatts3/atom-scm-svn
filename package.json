@@ -31,7 +31,8 @@
       "tortoise-svn:lockFromTreeView",
       "tortoise-svn:lockFromEditor",
       "tortoise-svn:unlockFromTreeView",
-      "tortoise-svn:unlockFromEditor"
+      "tortoise-svn:unlockFromEditor",
+      "tortoise-svn:checkoutSVN"
     ]
   },
   "repository": {
@@ -42,5 +43,7 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-svn-ultimate":"1.0.4"
+  }
 }
