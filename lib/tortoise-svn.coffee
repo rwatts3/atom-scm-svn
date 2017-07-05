@@ -278,6 +278,6 @@ module.exports = TortoiseSvn =
     url = 'https://lp-hp:8443/svn/LP2.6_Premium5/64/LP%20Tools/01.%20Table%20Builder'
     dir = 'c:/test'
     userinfo =
-      'username': 'klgterry'
-      'password': 'ritmql12!'
+      'username': 'lee.js'
+      'password': 'lee.js'
     checkout(url,dir,userinfo)
