@@ -1,7 +1,7 @@
 {
   "name": "mzlp-svn",
   "main": "./lib/tortoise-svn",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A package for Windows TortoiseSVN, for Mediazen LP Team",
   "keywords": [
     "mzlp",
@@ -44,6 +44,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "node-svn-ultimate":"1.0.4"
+    "node-svn-ultimate": "1.0.4"
   }
 }
