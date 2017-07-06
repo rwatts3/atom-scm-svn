@@ -33,7 +33,7 @@ resolveTreeHead = ->
 
 resolveEditorFile = ->
   editor = atom.workspace.getActivePaneItem()
-  file = editor?.buffer.filef
+  file = editor?.buffer.file
   file?.path
 
 blame = (currFile)->
@@ -270,13 +270,8 @@ module.exports = TortoiseSvn =
     unlock(currFile) if currFile?
 
   checkoutSVN: ->
-    # url = 'https://DESKTOP-A4U3RU7/svn/ssss'
-    # dir = 'c:/test'
-    # userinfo =
-    #   'username': 'jusung4'
-    #   'password': '1234'
-    url = 'https://lp-hp:8443/svn/LP2.6_Premium5/64/LP%20Tools/01.%20Table%20Builder'
-    dir = 'c:/test'
+    url = "\"https://lp-hp:8443/svn/TestDB/LP2.6_Premium5/64/LP Tools/01. Table Builder\""
+    dir = 'c:/test3'
     userinfo =
       'username': 'lee.js'
       'password': 'lee.js'
