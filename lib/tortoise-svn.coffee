@@ -127,14 +127,13 @@ unlock = (currFile) ->
 
 checkout =(url,dir,userinfo) ->
   svn = require('node-svn-ultimate')
-
+  atom.notifications.addInfo("체크아웃 중...")
   svn.commands.checkout url, dir, userinfo, (err) ->
-    console.log 'err : ' + err
     if err==null
-      alert 'Checkout complete'
       atom.project.addPath(dir)
+      atom.notifications.addSuccess('Checkout complete')
     else
-      console.log err
+      atom.notifications.addError(err)
 
 
 module.exports = TortoiseSvn =
