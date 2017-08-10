@@ -2,7 +2,7 @@
   "context-menu": {
 	"atom-text-editor": [
 	  {
-		"label": "mzlp-svn",
+		"label": "scm-svn",
 		"submenu": [
 		  {
 			"label": "Add",
@@ -40,7 +40,7 @@
 	],
 	".tree-view": [
 	  {
-		"label": "mzlp-svn",
+		"label": "scm-svn",
 		"submenu": [
 		  {
 			"label": "Add",
@@ -85,7 +85,7 @@
 	  "label": "Packages",
 	  "submenu": [
 		{
-		  "label": "mzlp-svn",
+		  "label": "scm-svn",
 		  "submenu": [
 			{
 			  "label": "좌측 트리뷰에서 사용해주세요"
