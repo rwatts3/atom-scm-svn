@@ -1,49 +1,50 @@
 {
-  "name": "mzlp-svn",
-  "main": "./lib/tortoise-svn",
-  "version": "0.2.3",
-  "description": "A package for Windows TortoiseSVN, for Mediazen LP Team",
-  "keywords": [
-    "mzlp",
-    "mediazen",
-    "lpteam",
-    "juicyjusung"
-  ],
-  "activationCommands": {
-    "atom-workspace": [
-      "tortoise-svn:blameFromTreeView",
-      "tortoise-svn:blameFromEditor",
-      "tortoise-svn:commitFromTreeView",
-      "tortoise-svn:commitFromEditor",
-      "tortoise-svn:diffFromTreeView",
-      "tortoise-svn:diffFromEditor",
-      "tortoise-svn:logFromTreeView",
-      "tortoise-svn:logFromEditor",
-      "tortoise-svn:revertFromTreeView",
-      "tortoise-svn:revertFromEditor",
-      "tortoise-svn:updateFromTreeView",
-      "tortoise-svn:updateFromEditor",
-      "tortoise-svn:switchFromTreeView",
-      "tortoise-svn:addFromTreeView",
-      "tortoise-svn:addFromEditor",
-      "tortoise-svn:renameFromTreeView",
-      "tortoise-svn:renameFromEditor",
-      "tortoise-svn:lockFromTreeView",
-      "tortoise-svn:lockFromEditor",
-      "tortoise-svn:unlockFromTreeView",
-      "tortoise-svn:unlockFromEditor",
-      "tortoise-svn:checkoutSVN"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jusung21c/mzlp-svn.git"
-  },
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {
-    "node-svn-ultimate": "1.0.4"
-  }
+	"name": "scm-svn",
+	"main": "./lib/tortoise-svn",
+	"version": "0.1.0",
+	"description": "SCM SVN",
+	"author" : "rwatts3",
+	"keywords": [
+		"mzlp",
+		"mediazen",
+		"lpteam",
+		"juicyjusung"
+	],
+	"activationCommands": {
+		"atom-workspace": [
+			"tortoise-svn:blameFromTreeView",
+			"tortoise-svn:blameFromEditor",
+			"tortoise-svn:commitFromTreeView",
+			"tortoise-svn:commitFromEditor",
+			"tortoise-svn:diffFromTreeView",
+			"tortoise-svn:diffFromEditor",
+			"tortoise-svn:logFromTreeView",
+			"tortoise-svn:logFromEditor",
+			"tortoise-svn:revertFromTreeView",
+			"tortoise-svn:revertFromEditor",
+			"tortoise-svn:updateFromTreeView",
+			"tortoise-svn:updateFromEditor",
+			"tortoise-svn:switchFromTreeView",
+			"tortoise-svn:addFromTreeView",
+			"tortoise-svn:addFromEditor",
+			"tortoise-svn:renameFromTreeView",
+			"tortoise-svn:renameFromEditor",
+			"tortoise-svn:lockFromTreeView",
+			"tortoise-svn:lockFromEditor",
+			"tortoise-svn:unlockFromTreeView",
+			"tortoise-svn:unlockFromEditor",
+			"tortoise-svn:checkoutSVN"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rwatts3/atom-scm-svn.git"
+	},
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"dependencies": {
+		"node-svn-ultimate": "1.0.4"
+	}
 }
