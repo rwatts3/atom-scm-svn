@@ -268,10 +268,10 @@ module.exports = TortoiseSvn =
     currFile = resolveEditorFile()
     unlock(currFile) if currFile?
 
-  checkoutSVN: ->
-    url = "\"https://lp-hp:8443/svn/TestDB/LP2.6_Premium5/64/LP Tools/01. Table Builder\""
-    dir = 'c:/test3'
-    userinfo =
-      'username': 'lee.js'
-      'password': 'lee.js'
-    checkout(url,dir,userinfo)
+#   checkoutSVN: ->
+#     url = "\"https://lp-hp:8443/svn/TestDB/LP2.6_Premium5/64/LP Tools/01. Table Builder\""
+#     dir = 'c:/test3'
+#     userinfo =
+#       'username': 'lee.js'
+#       'password': 'lee.js'
+#     checkout(url,dir,userinfo)
